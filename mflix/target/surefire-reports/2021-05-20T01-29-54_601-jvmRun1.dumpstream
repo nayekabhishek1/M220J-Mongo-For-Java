@@ -1,0 +1,157 @@
+# Created at 2021-05-20T01:30:39.746
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: DEFAULT
+java.io.EOFException
+	at java.base/java.io.DataInputStream.readInt(DataInputStream.java:397)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:391)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+
+# Created at 2021-05-20T01:31:02.674
+Unexpected IOException: 7,1,mflix.api.daos.ConnectionTest,testConnectionFindsCollections(mflix.api.daos.ConnectionTest),null,Timed out after 30000 ms while waiting for a server that matches com.mongodb.client.internal.MongoClientDelegate$1@d653e41. Client view of cluster state is {type=REPLICA_SET\002C servers=[{address=mflix-shard-00-02.owxuv.mongodb.net:27017\002C type=UNKNOWN\002C state=CONNECTING\002C exception={com.mongodb.MongoSocketWriteException: Exception sending message}\002C caused by {javax.net.ssl.SSLHandshakeException: extension (5) should not be presented in certificate_request}}\002C {address=mflix-shard-00-01.owxuv.mongodb.net:27017\002C type=UNKNOWN\002C state=CONNECTING\002C exception={com.mongodb.MongoSocketWriteException: Exception sending message}\002C caused by {javax.net.ssl.SSLHandshakeException: extension (5) should not be presented in certificate_request}}\002C {address=mflix-shard-00-00.owxuv.mongodb.net:27017\002C type=UNKNOWN\002C state=CONNECTING\002C exception={com.mongodb.MongoSocketWriteException: Exception sending message}\002C caused by {javax.net.ssl.SSLHandshakeException: extension (5) should not be presented in certificate_request}}],null,Timed out after 30000 ms while waiting for a server that matches com.mongodb.client.internal.MongoClientDelegate$1@d653e41. Client view of cluster state is {type=REPLICA_SET\002C servers=[{address=mflix-shard-00-02.owxuv.mongodb.net:27017\002C type=UNKNOWN\002C state=CONNECTING\002C exception={com.mongodb.MongoSocketWriteException: Exception sending message}\002C caused by {javax.net.ssl.SSLHandshakeException: extension (5) should not be presented in certificate_request}}\002C {address=mflix-shard-00-01.owxuv.mongodb.net:27017\002C type=UNKNOWN\002C state=CONNECTING\002C exception={com.mongodb.MongoSocketWriteException: Exception sending message}\002C caused by {javax.net.ssl.SSLHandshakeException: extension (5) should not be presented in certificate_request}}\002C {address=mflix-shard-00-00.owxuv.mongodb.net:27017\002C type=UNKNOWN\002C state=CONNECTING\002C exception={com.mongodb.MongoSocketWriteException: Exception sending message}\002C caused by {javax.net.ssl.SSLHandshakeException: extension (5) should not be presented in certificate_request}}],ConnectionTest.testConnectionFindsCollections:71 \00BB MongoTimeout Timed out afte...,com.mongodb.MongoTimeoutException: Timed out after 30000 ms while waiting for a server that matches com.mongodb.client.internal.MongoClientDelegate$1@d653e41. Client view of cluster state is {type=REPLICA_SET\002C servers=[{address=mflix-shard-00-02.owxuv.mongodb.net:27017\002C type=UNKNOWN\002C state=CONNECTING\002C exception={com.mongodb.MongoSocketWriteException: Exception sending message}\002C caused by {javax.net.ssl.SSLHandshakeException: extension (5) should not be presented in certificate_request}}\002C {address=mflix-shard-00-01.owxuv.mongodb.net:27017\002C type=UNKNOWN\002C state=CONNECTING\002C exception={com.mongodb.MongoSocketWriteException: Exception sending message}\002C caused by {javax.net.ssl.SSLHandshakeException: extension (5) should not be presented in certificate_request}}\002C {address=mflix-shard-00-00.owxuv.mongodb.net:27017\002C type=UNKNOWN\002C state=CONNECTING\002C exception={com.mongodb.MongoSocketWriteException: Exception sending message}\002C caused by {javax.net.ssl.SSLHandshakeException: extension (5) should not be presented in certificate_request}}]\000A\0009at mflix.api.daos.ConnectionTest.testConnectionFindsCollections(ConnectionTest.java:71)\000A
+
+
+# Created at 2021-05-20T01:31:02.684
+Unexpected IOException: 5,1,mflix.api.daos.ConnectionTest,testConnectionFindsDatabase(mflix.api.daos.ConnectionTest),null,null,null
+
+
+# Created at 2021-05-20T01:31:02.771
+Unexpected IOException with stream: 2021-05-20 01:31:02.768  INFO 15420 --- [           main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[mflix-shard-00-00.owxuv.mongodb.net:27017, mflix-shard-00-01.owxuv.mongodb.net:27017, mflix-shard-00-02.owxuv.mongodb.net:27017], mode=MULTIPLE, requiredClusterType=REPLICA_SET, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500, requiredReplicaSetName='atlas-zis5yg-shard-0'}
+
+
+# Created at 2021-05-20T01:31:02.779
+Unexpected IOException with stream: 2021-05-20 01:31:02.777  INFO 15420 --- [           main] org.mongodb.driver.cluster               : Adding discovered server mflix-shard-00-00.owxuv.mongodb.net:27017 to client view of cluster
+
+
+# Created at 2021-05-20T01:31:02.789
+Unexpected IOException with stream: 2021-05-20 01:31:02.787  INFO 15420 --- [           main] org.mongodb.driver.cluster               : Adding discovered server mflix-shard-00-01.owxuv.mongodb.net:27017 to client view of cluster
+
+
+# Created at 2021-05-20T01:31:02.800
+Unexpected IOException with stream: 2021-05-20 01:31:02.797  INFO 15420 --- [           main] org.mongodb.driver.cluster               : Adding discovered server mflix-shard-00-02.owxuv.mongodb.net:27017 to client view of cluster
+
+
+# Created at 2021-05-20T01:31:02.812
+Unexpected IOException with stream: 2021-05-20 01:31:02.809  INFO 15420 --- [           main] org.mongodb.driver.cluster               : No server chosen by com.mongodb.client.internal.MongoClientDelegate$1@1625789b from cluster description ClusterDescription{type=REPLICA_SET, connectionMode=MULTIPLE, serverDescriptions=[ServerDescription{address=mflix-shard-00-02.owxuv.mongodb.net:27017, type=UNKNOWN, state=CONNECTING}, ServerDescription{address=mflix-shard-00-01.owxuv.mongodb.net:27017, type=UNKNOWN, state=CONNECTING}, ServerDescription{address=mflix-shard-00-00.owxuv.mongodb.net:27017, type=UNKNOWN, state=CONNECTING}]}. Waiting for 30000 ms before timing out
+
+
+# Created at 2021-05-20T01:31:03.334
+Unexpected IOException with stream: 2021-05-20 01:31:03.330  INFO 15420 --- [ngodb.net:27017] org.mongodb.driver.cluster               : Exception in monitor thread while connecting to server mflix-shard-00-00.owxuv.mongodb.net:27017
+
+com.mongodb.MongoSocketWriteException: Exception sending message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateWriteException(InternalStreamConnection.java:541) ~[mongodb-driver-core-3.9.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.sendMessage(InternalStreamConnection.java:429) ~[mongodb-driver-core-3.9.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.sendCommandMessage(InternalStreamConnection.java:269) ~[mongodb-driver-core-3.9.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.sendAndReceive(InternalStreamConnection.java:253) ~[mongodb-driver-core-3.9.1.jar:na]
+	at com.mongodb.internal.connection.CommandHelper.sendAndReceive(CommandHelper.java:83) ~[mongodb-driver-core-3.9.1.jar:na]
+	at com.mongodb.internal.connection.CommandHelper.executeCommand(CommandHelper.java:33) ~[mongodb-driver-core-3.9.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnectionInitializer.initializeConnectionDescription(InternalStreamConnectionInitializer.java:106) ~[mongodb-driver-core-3.9.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnectionInitializer.initialize(InternalStreamConnectionInitializer.java:63) ~[mongodb-driver-core-3.9.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:127) ~[mongodb-driver-core-3.9.1.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117) ~[mongodb-driver-core-3.9.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+Caused by: javax.net.ssl.SSLHandshakeException: extension (5) should not be presented in certificate_request
+	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:128) ~[na:na]
+	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:117) ~[na:na]
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:308) ~[na:na]
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:264) ~[na:na]
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:255) ~[na:na]
+	at java.base/sun.security.ssl.SSLExtensions.<init>(SSLExtensions.java:71) ~[na:na]
+	at java.base/sun.security.ssl.CertificateRequest$T13CertificateRequestMessage.<init>(CertificateRequest.java:757) ~[na:na]
+	at java.base/sun.security.ssl.CertificateRequest$T13CertificateRequestConsumer.consume(CertificateRequest.java:861) ~[na:na]
+	at java.base/sun.security.ssl.SSLHandshake.consume(SSLHandshake.java:392) ~[na:na]
+	at java.base/sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:444) ~[na:na]
+	at java.base/sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:421) ~[na:na]
+	at java.base/sun.security.ssl.TransportContext.dispatch(TransportContext.java:178) ~[na:na]
+	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:164) ~[na:na]
+	at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1152) ~[na:na]
+	at java.base/sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1063) ~[na:na]
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:402) ~[na:na]
+	at java.base/sun.security.ssl.SSLSocketImpl.ensureNegotiated(SSLSocketImpl.java:716) ~[na:na]
+	at java.base/sun.security.ssl.SSLSocketImpl$AppOutputStream.write(SSLSocketImpl.java:970) ~[na:na]
+	at com.mongodb.internal.connection.SocketStream.write(SocketStream.java:99) ~[mongodb-driver-core-3.9.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.sendMessage(InternalStreamConnection.java:426) ~[mongodb-driver-core-3.9.1.jar:na]
+	... 9 common frames omitted
+
+
+
+# Created at 2021-05-20T01:31:03.356
+Unexpected IOException with stream: 2021-05-20 01:31:03.353  INFO 15420 --- [ngodb.net:27017] org.mongodb.driver.cluster               : Exception in monitor thread while connecting to server mflix-shard-00-02.owxuv.mongodb.net:27017
+
+com.mongodb.MongoSocketWriteException: Exception sending message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateWriteException(InternalStreamConnection.java:541) ~[mongodb-driver-core-3.9.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.sendMessage(InternalStreamConnection.java:429) ~[mongodb-driver-core-3.9.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.sendCommandMessage(InternalStreamConnection.java:269) ~[mongodb-driver-core-3.9.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.sendAndReceive(InternalStreamConnection.java:253) ~[mongodb-driver-core-3.9.1.jar:na]
+	at com.mongodb.internal.connection.CommandHelper.sendAndReceive(CommandHelper.java:83) ~[mongodb-driver-core-3.9.1.jar:na]
+	at com.mongodb.internal.connection.CommandHelper.executeCommand(CommandHelper.java:33) ~[mongodb-driver-core-3.9.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnectionInitializer.initializeConnectionDescription(InternalStreamConnectionInitializer.java:106) ~[mongodb-driver-core-3.9.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnectionInitializer.initialize(InternalStreamConnectionInitializer.java:63) ~[mongodb-driver-core-3.9.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:127) ~[mongodb-driver-core-3.9.1.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117) ~[mongodb-driver-core-3.9.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+Caused by: javax.net.ssl.SSLHandshakeException: extension (5) should not be presented in certificate_request
+	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:128) ~[na:na]
+	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:117) ~[na:na]
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:308) ~[na:na]
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:264) ~[na:na]
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:255) ~[na:na]
+	at java.base/sun.security.ssl.SSLExtensions.<init>(SSLExtensions.java:71) ~[na:na]
+	at java.base/sun.security.ssl.CertificateRequest$T13CertificateRequestMessage.<init>(CertificateRequest.java:757) ~[na:na]
+	at java.base/sun.security.ssl.CertificateRequest$T13CertificateRequestConsumer.consume(CertificateRequest.java:861) ~[na:na]
+	at java.base/sun.security.ssl.SSLHandshake.consume(SSLHandshake.java:392) ~[na:na]
+	at java.base/sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:444) ~[na:na]
+	at java.base/sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:421) ~[na:na]
+	at java.base/sun.security.ssl.TransportContext.dispatch(TransportContext.java:178) ~[na:na]
+	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:164) ~[na:na]
+	at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1152) ~[na:na]
+	at java.base/sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1063) ~[na:na]
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:402) ~[na:na]
+	at java.base/sun.security.ssl.SSLSocketImpl.ensureNegotiated(SSLSocketImpl.java:716) ~[na:na]
+	at java.base/sun.security.ssl.SSLSocketImpl$AppOutputStream.write(SSLSocketImpl.java:970) ~[na:na]
+	at com.mongodb.internal.connection.SocketStream.write(SocketStream.java:99) ~[mongodb-driver-core-3.9.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.sendMessage(InternalStreamConnection.java:426) ~[mongodb-driver-core-3.9.1.jar:na]
+	... 9 common frames omitted
+
+
+
+# Created at 2021-05-20T01:31:03.373
+Unexpected IOException with stream: 2021-05-20 01:31:03.370  INFO 15420 --- [ngodb.net:27017] org.mongodb.driver.cluster               : Exception in monitor thread while connecting to server mflix-shard-00-01.owxuv.mongodb.net:27017
+
+com.mongodb.MongoSocketWriteException: Exception sending message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateWriteException(InternalStreamConnection.java:541) ~[mongodb-driver-core-3.9.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.sendMessage(InternalStreamConnection.java:429) ~[mongodb-driver-core-3.9.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.sendCommandMessage(InternalStreamConnection.java:269) ~[mongodb-driver-core-3.9.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.sendAndReceive(InternalStreamConnection.java:253) ~[mongodb-driver-core-3.9.1.jar:na]
+	at com.mongodb.internal.connection.CommandHelper.sendAndReceive(CommandHelper.java:83) ~[mongodb-driver-core-3.9.1.jar:na]
+	at com.mongodb.internal.connection.CommandHelper.executeCommand(CommandHelper.java:33) ~[mongodb-driver-core-3.9.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnectionInitializer.initializeConnectionDescription(InternalStreamConnectionInitializer.java:106) ~[mongodb-driver-core-3.9.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnectionInitializer.initialize(InternalStreamConnectionInitializer.java:63) ~[mongodb-driver-core-3.9.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:127) ~[mongodb-driver-core-3.9.1.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117) ~[mongodb-driver-core-3.9.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+Caused by: javax.net.ssl.SSLHandshakeException: extension (5) should not be presented in certificate_request
+	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:128) ~[na:na]
+	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:117) ~[na:na]
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:308) ~[na:na]
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:264) ~[na:na]
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:255) ~[na:na]
+	at java.base/sun.security.ssl.SSLExtensions.<init>(SSLExtensions.java:71) ~[na:na]
+	at java.base/sun.security.ssl.CertificateRequest$T13CertificateRequestMessage.<init>(CertificateRequest.java:757) ~[na:na]
+	at java.base/sun.security.ssl.CertificateRequest$T13CertificateRequestConsumer.consume(CertificateRequest.java:861) ~[na:na]
+	at java.base/sun.security.ssl.SSLHandshake.consume(SSLHandshake.java:392) ~[na:na]
+	at java.base/sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:444) ~[na:na]
+	at java.base/sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:421) ~[na:na]
+	at java.base/sun.security.ssl.TransportContext.dispatch(TransportContext.java:178) ~[na:na]
+	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:164) ~[na:na]
+	at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1152) ~[na:na]
+	at java.base/sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1063) ~[na:na]
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:402) ~[na:na]
+	at java.base/sun.security.ssl.SSLSocketImpl.ensureNegotiated(SSLSocketImpl.java:716) ~[na:na]
+	at java.base/sun.security.ssl.SSLSocketImpl$AppOutputStream.write(SSLSocketImpl.java:970) ~[na:na]
+	at com.mongodb.internal.connection.SocketStream.write(SocketStream.java:99) ~[mongodb-driver-core-3.9.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.sendMessage(InternalStreamConnection.java:426) ~[mongodb-driver-core-3.9.1.jar:na]
+	... 9 common frames omitted
+
+
+
